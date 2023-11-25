@@ -1,0 +1,18 @@
+:root {
+    --primary: #417777;
+    --secondary: #A6E6DB;
+    --tertiary: #AA1155;
+    --cta: #CBFF8C;
+    --orange: #FC9E4F;
+    --secondary-light: #E5F5F3;
+    --whiteish: #FAFAFA;
+    --blackish: #1E2323;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}

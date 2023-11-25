@@ -20,5 +20,34 @@ nav ul {
 }
 
 nav li a {
-    fo
+    font-family: var(--header);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+}
+
+.nav-logo {
+    height: 40px;
+    
+}
+
+.nav-events {
+    color: var(--tertiary);
+}
+
+.nav-home, .nav-contact {
+    color: var(--secondary);
+}
+
+.nav-exhibits {
+    color: var(--cta);
+    
+}
+
+.nav-articles {
+    color: var(--orange);
 }

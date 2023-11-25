@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    top: 0;
+    height: 48px;
+    position: static;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0;
+    list-style: none;
+    padding: 0 16px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li a {
+    fo
+}

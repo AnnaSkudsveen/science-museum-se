@@ -1,22 +1,32 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary);
-    top: 0;
     height: 48px;
-    position: static;
+    align-items: center;
+    position: relative;
+}
+
+.nav-logo {
+    height: 36px;
+    display: flex;
     align-items: center;
 }
 
-nav ul li {
-    padding: 0;
-    list-style: none;
-    padding: 0 16px;
+.nav-logo, nav label {
+    padding: 0 20px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
+.nav-menu-items li {
+    list-style: none;
+    padding: 16px 0 16px 20px ;
+    margin: 0;
+    border-top: 1px solid var(--secondary) ;
 }
 
 nav li a {
@@ -30,10 +40,24 @@ nav li a:hover {
     text-underline-offset: 4px;
 }
 
-.nav-logo {
-    height: 40px;
-    
+#nav-menu-button:checked ~ .nav-menu-items {
+    display: block;
+    position: absolute;
+    background-color: var(--primary);
+    width: 100vw;
+    top: 48px;
+    margin: 0px;
+    padding: 0;
 }
+
+.nav-menu-items {
+    display: none;
+}
+
+#nav-menu-button {
+    display: none;
+}
+
 
 .nav-events {
     color: var(--tertiary);
@@ -48,6 +72,45 @@ nav li a:hover {
     
 }
 
-.nav-articles {
+.nav-articles, nav label {
     color: var(--orange);
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    nav label {
+        display: none;
+    }
+
+    .nav-menu-items {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .nav-menu-items li {
+        padding: 0 20px;
+        border: none;
+    }
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
 }

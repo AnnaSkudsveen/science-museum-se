@@ -21,6 +21,7 @@ html {
 
 body {
     margin: 0;
+    position: relative;
 }
 
 p, li {
@@ -30,6 +31,7 @@ p, li {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ranchers', sans-serif;
+    letter-spacing: 2px;
 }
 
 a:hover {

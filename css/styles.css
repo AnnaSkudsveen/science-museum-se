@@ -17,19 +17,66 @@ h2 {
     position: relative;
 }
 
-.hero-banner-tablet, .hero-banner-desktop {
+.image-tablet, .image-desktop {
     display: none;
+}
+
+.new-exhibit-blue-box {
+    background-color: var(--secondary);
+    height: 177px;
+    width: 173px;
+    z-index: -10;
+    position: absolute;
+    right: 28px;
+}
+
+.new-exhibit-image {
+    position: relative;
+}
+
+.orange-background {
+    height: 189px;
+    width: 189px;
+    background-color: var(--orange);
+    position: absolute;
+    right: 0;
+}
+
+.green-circle {
+    width: 57px;
+    height: 57px;
+    background-color: var(--cta);
+    border-radius: 50%;
+    position: absolute;
+    right: 17px;
+}
+
+.event-yarn-ball {
+    height: 104px;
+    width: 104px;
+    position: absolute;
+    right: 22px;
+}
+
+.home-information {
+    background-color: var(--tertiary);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
 
-    .hero-banner-mobile, .hero-banner-desktop {
+    .image-mobile, .image-desktop {
         display: none;
     }
 
-    .hero-banner-tablet {
+    .image-tablet {
         display: block;
+    }
+
+    .home-information {
+        flex-direction: row;
     }
 }
 
@@ -43,11 +90,11 @@ h2 {
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
 
-    .hero-banner-tablet, .hero-banner-mobile {
+    .image-tablet, .image-mobile {
         display: none;
     }
 
-    .hero-banner-desktop {
+    .image-desktop {
         display: block;
     }
 }

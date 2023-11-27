@@ -28,10 +28,12 @@ h2 {
     z-index: -10;
     position: absolute;
     right: 28px;
+    bottom: 20px;
 }
 
 .new-exhibit-image {
     position: relative;
+    max-width: 600px;
 }
 
 .orange-background {

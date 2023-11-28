@@ -21,8 +21,7 @@ h2 {
     display: none;
 }
 
-.new-exhibit-blue-box {
-    background-color: var(--secondary);
+.background-new-exhibit {
     height: 177px;
     width: 173px;
     z-index: -10;
@@ -31,23 +30,46 @@ h2 {
     bottom: 20px;
 }
 
+.blue-background {
+    background-color: var(--secondary);
+}
+
+.orange-background {
+    background-color: var(--orange);
+}
+
+.green-background {
+    background-color: var(--cta);
+}
+
+.pink-background {
+    background-color: var(--tertiary);
+}
+
+.primary-background {
+    background-color: var(--primary);
+}
+
 .new-exhibit-image {
     position: relative;
     max-width: 600px;
 }
 
-.orange-background {
-    height: 189px;
-    width: 189px;
-    background-color: var(--orange);
+.orange-background-exhibit {
     position: absolute;
     right: 0;
+    height: 189px;
+    width: 189px;
+}
+
+.background-article {
+    height: 112px;
+    width: 265px;
 }
 
 .green-circle {
     width: 57px;
     height: 57px;
-    background-color: var(--cta);
     border-radius: 50%;
     position: absolute;
     right: 17px;
@@ -61,9 +83,19 @@ h2 {
 }
 
 .home-information {
-    background-color: var(--tertiary);
     display: flex;
     flex-direction: column;
+}
+
+.background-tree-of-learning {
+    height: 265px;
+    width: 265px;
+}
+
+.article-link {
+    height: 320px;
+    width: 320px;
+    grid-area: article-link;
 }
 
 /* Small (sm)  portrait tablets and large phones */

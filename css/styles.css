@@ -8,6 +8,10 @@ h2 {
     color: var(--orange);
 }
 
+body {
+    grid-area-template
+}
+
 .hero-banner h1, .hero-banner h2 {
     position: relative;
     bottom: 270px;
@@ -94,10 +98,37 @@ h2 {
 
 .article-link {
     height: 320px;
-    width: 320px;
+    width: 100vw;
     grid-area: article-link;
 }
 
+.tickets-link, .exhibits-link, .contact-us-link, .events-link {
+    height: 216px;
+    width: 100vw;
+    position: relative;
+}
+
+.tickets-link {
+    grid-area: tickets-link;
+}
+
+.exhibits-link {
+    grid-area: tickets-link;
+}
+
+.exhibits-link svg {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+
+.contact-us-link {
+    grid-area: contact-link;
+}
+
+.events-link {
+    grid-area: events-link;
+}
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
 

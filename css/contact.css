@@ -1,0 +1,11 @@
+#name, #email, #contact-reason, #message {
+    display: flex;
+    width: 88vw;
+    justify-content: center;
+}
+
+::placeholder {
+    padding-left: 20px;
+    color: var(--primary);
+}
+

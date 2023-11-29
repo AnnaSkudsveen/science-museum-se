@@ -17,9 +17,9 @@ body {
     bottom: 270px;
 }
 
-.hero-banner {
+/* .hero-banner {
     position: relative;
-}
+} */
 
 .image-tablet, .image-desktop {
     display: none;
@@ -131,15 +131,6 @@ body {
 }
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
-
-    .image-mobile, .image-desktop {
-        display: none;
-    }
-
-    .image-tablet {
-        display: block;
-    }
-
     .home-information {
         flex-direction: row;
     }
@@ -154,14 +145,7 @@ body {
 /* Large (lg) laptops/desktops*/
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
-
-    .image-tablet, .image-mobile {
-        display: none;
-    }
-
-    .image-desktop {
-        display: block;
-    }
+    
 }
 
 /* Extra Large (xl) large laptops and desktops*/

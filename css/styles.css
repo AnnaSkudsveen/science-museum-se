@@ -9,29 +9,47 @@ h2 {
 }
 
 body {
-    grid-area-template
+    grid-area-template:;
 }
 
 .hero-banner h1, .hero-banner h2 {
-    position: relative;
+    position: absolute;
     bottom: 270px;
 }
 
-/* .hero-banner {
+.hero-banner {
     position: relative;
-} */
-
-.image-tablet, .image-desktop {
-    display: none;
 }
+
+/* .hero-banner .image-mobile, .hero-banner .image-tablet, .hero-banner .image-desktop {
+    z-index: -20;
+} */
 
 .background-new-exhibit {
     height: 177px;
     width: 173px;
-    z-index: -10;
+    z-index: 0;
     position: absolute;
     right: 28px;
     bottom: 20px;
+}
+
+.new-exhibit-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.new-exhibit-yarn-ball {
+    max-height: 40vw;
+    width: auto;
+    position: absolute;
+    top: -35px;
+    /* left: -135px; */
+    z-index: 20;
+    display: flex;
+    align-self: flex-start;
+    justify-self: baseline;
 }
 
 .blue-background {
@@ -129,6 +147,7 @@ body {
 .events-link {
     grid-area: events-link;
 }
+
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
     .home-information {
@@ -139,7 +158,9 @@ body {
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
-    
+    .new-exhibit-yarn-ball {
+        max-height: 189px;
+    }
 }
 
 /* Large (lg) laptops/desktops*/

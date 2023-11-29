@@ -45,34 +45,42 @@
         <img src="/assets/contact/desktop/header-image.jpg" alt="" class="image-desktop">
         </section>
 
-        <form action="#">
-            <!-- Name -->
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Full name">
+        <section class="form-container">
+            <form action="#">
+                <!-- Name -->
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Full name">
+    
+                <!-- Email -->
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email adress">
+    
+                <!-- Select -->
+                <label for="contact-reason"></label>
+                <select name="contact-reason" id="contact-reason">
+                    <option value="" selected disabled>Reason for contact:</option>
+                    <option value="report-a-problem">Report a problem</option>
+                    <option value="event-information">Event information</option>
+                    <option value="exhibition-information">Exhibition information</option>
+                    <option value="accessability">Accessability</option>
+                    <option value="work-with-us">Work with us</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+    
+                <button>Send</button>
+            </form>
 
-            <!-- Email -->
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="Email adress">
+            <div class="svg-letter">
+            <!-- SVG animation -->
+            </div>
 
-            <!-- Select -->
-            <label for="contact-reason"></label>
-            <select name="" id="contact-reason">
-                <option value="reason" >Reason for contact:</option>
-                <option value="report-a-problem">Report a problem</option>
-                <option value="event-information">Event information</option>
-                <option value="exhibition-information">Exhibition information</option>
-                <option value="accessability">Accessability</option>
-                <option value="work-with-us">Work with us</option>
-                <option value="other">Other</option>
-            </select>
+        </section>
+        
 
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-            <button>Send</button>
-        </form>
-
-        <article>
-            <img src="#" alt="">
+        <article class="location">
+            <iframe src="https://api.mapbox.com/styles/v1/annaskudsveen/clpjwbkwe00ro01o93an9c59o.html?title=false&access_token=pk.eyJ1IjoiYW5uYXNrdWRzdmVlbiIsImEiOiJjbHAxajg5bjcwajJoMmpxeTlubXBoZG85In0.c-YwdPtcz8xR5KWCbFg4VQ&zoomwheel=false#15.17/59.92865/10.755379" title="Untitled" style="border:none;"></iframe>
             <h2>
                 Where to find us
             </h2>
@@ -94,6 +102,7 @@
             </h3>
             <p>
                 Monday - Friday: 9 am - 5 pm
+                <br>
                 Saturday - Sunday: 9 am - 8 pm
             </p>
         </article>

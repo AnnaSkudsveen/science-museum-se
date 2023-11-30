@@ -8,13 +8,23 @@ h2 {
     color: var(--orange);
 }
 
-body {
+
+
+/* body {
     grid-area-template:;
-}
+} */
 
 .hero-banner h1, .hero-banner h2 {
     position: absolute;
-    bottom: 270px;
+}
+
+.hero-banner h1 {
+    bottom: 160px;
+}
+
+.hero-banner h2 {
+    color: var(--cta);
+    bottom: 140px;
 }
 
 .hero-banner {
@@ -24,6 +34,18 @@ body {
 /* .hero-banner .image-mobile, .hero-banner .image-tablet, .hero-banner .image-desktop {
     z-index: -20;
 } */
+
+
+.new-exhibit, .new-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.new-exhibit h3, .new-event h3 {
+    color: var(--primary);
+}
 
 .background-new-exhibit {
     height: 177px;
@@ -40,17 +62,17 @@ body {
     position: relative;
 }
 
-.new-exhibit-yarn-ball {
+/* .new-exhibit-yarn-ball {
     max-height: 40vw;
     width: auto;
     position: absolute;
     top: -35px;
-    /* left: -135px; */
+    left: -135px;
     z-index: 20;
     display: flex;
     align-self: flex-start;
     justify-self: baseline;
-}
+} */
 
 .blue-background {
     background-color: var(--secondary);
@@ -105,8 +127,23 @@ body {
 }
 
 .home-information {
+    height: 750px;
+    width: 100vw;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.home-information p, .home-information{
+    color: var(--secondary);
+    margin: 0;
+}
+
+.home-information iframe {
+    height: 250px;
+    width: 100%;
+    border: none;
 }
 
 .background-tree-of-learning {
@@ -131,7 +168,7 @@ body {
 }
 
 .exhibits-link {
-    grid-area: tickets-link;
+    grid-area: exhibits-link;
 }
 
 .exhibits-link svg {
@@ -152,6 +189,14 @@ body {
 @media (min-width: 640px) {
     .home-information {
         flex-direction: row;
+        padding: 35px;
+        gap: 20px;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+    .home-information iframe{
+        height: 430px;
     }
 }
 
@@ -161,19 +206,48 @@ body {
     .new-exhibit-yarn-ball {
         max-height: 189px;
     }
+
+    .image-links{
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        "article-link article-link"
+        "tickets-link exhibits-link"
+        "contact-link events-link"
+        ;
+    }
+
+    .home-information iframe{
+        height: 400px;
+    }
+
+    .home-information-text {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 498px;
+    }
 }
 
 /* Large (lg) laptops/desktops*/
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
-    
+    .home-information {
+        height: 664px;
+    }
+
+    .home-information iframe{
+        height: 491px;
+        width: 491px;
+    }
 }
 
 /* Extra Large (xl) large laptops and desktops*/
 
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
-
+    .home-information {
+        justify-content: center;
+    }
 }
 
 /* 2XL (2xl) */

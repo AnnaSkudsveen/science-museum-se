@@ -64,7 +64,7 @@ nav li a:hover {
     color: var(--tertiary);
 }
 
-.nav-home, .nav-contact {
+.nav-home, .nav-contact, nav label {
     color: var(--secondary);
 }
 
@@ -73,7 +73,7 @@ nav li a:hover {
     
 }
 
-.nav-articles, nav label {
+.nav-articles {
     color: var(--orange);
 }
 

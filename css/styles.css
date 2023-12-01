@@ -13,11 +13,11 @@ h2 {
     background-color: var(--secondary);
 }
 
-.orange-background {
+.orange-background, .orange-background-article {
     background-color: var(--orange);
 }
 
-.green-background {
+.green-background, .green-background-article {
     background-color: var(--cta);
 }
 
@@ -111,6 +111,8 @@ h2 {
 .background-article {
     height: 112px;
     width: 265px;
+    z-index: -10;
+    position: absolute;
 }
 
 .green-circle {
@@ -152,9 +154,25 @@ h2 {
     border: none;
 }
 
-.background-tree-of-learning {
+.tree-of-learning {
     height: 265px;
     width: 265px;
+    grid-area: article-1;
+}
+
+.article-1, .article-2 {
+    background-color: var(--secondary);
+    max-width: 266px;
+    margin: auto;
+    padding: 10px;
+}
+
+.article-1 {
+    grid-area: article-1;
+}
+
+.article-2 {
+    grid-area: article-2;
 }
 
 .article-link {
@@ -211,6 +229,11 @@ h2 {
 
     .home-information iframe{
         height: 430px;
+    }
+
+    .article-1, .article-2 {
+        padding: 20px;
+        max-width: 464px;
     }
 }
 
@@ -303,6 +326,10 @@ h2 {
     .home-information iframe{
         height: 491px;
         width: 491px;
+    }
+
+    .article-1, .article-2 {
+        padding: 24px;
     }
 }
 

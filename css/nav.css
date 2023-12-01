@@ -79,6 +79,9 @@ nav li a:hover {
 
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
+    .nav-logo, .nav-menu-items {
+        padding: 0 35px;
+    }
 }
 
 /* Medium (md) landscape tablets*/
@@ -104,6 +107,9 @@ nav li a:hover {
 /* Large (lg) laptops/desktops*/
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
+    .nav-logo, .nav-menu-items {
+        padding: 0 70px;
+    }
 }
 
 /* Extra Large (xl) large laptops and desktops*/

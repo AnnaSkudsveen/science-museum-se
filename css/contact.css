@@ -1,3 +1,9 @@
+.hero-banner img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
 .form-container {
     width: 100vw;
     /* justify-content: center; */
@@ -49,6 +55,13 @@ form {
     color: var(--primary);
 }
 
+form button {
+    height: 40px;
+    width: 176px;
+    font-size: 16px;
+    background-color:  ;
+}
+
 .location, .location p {
     background-color: var(--primary);
     color: var(--secondary);
@@ -76,6 +89,10 @@ form {
         flex-direction: row;
         max-width: 689px;
         justify-content: space-around;
+    }
+    
+    form {
+        margin: 20px;
     }
 }
 

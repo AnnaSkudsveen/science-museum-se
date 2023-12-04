@@ -1,0 +1,88 @@
+:root {
+    --primary: #417777;
+    --secondary: #A6E6DB;
+    --tertiary: #AA1155;
+    --cta: #CBFF8C;
+    --orange: #FC9E4F;
+    --secondary-light: #E5F5F3;
+    --whiteish: #FAFAFA;
+    --blackish: #1E2323;
+    --primary-dark: #0f3a3a;
+    --header: 'Ranchers', sans-serif;
+    --paragraph: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+p, li {
+    color: var(--blackish);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ranchers', sans-serif;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.image-tablet, .image-desktop {
+    display: none;
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+
+    .image-mobile, .image-desktop {
+        display: none;
+    }
+
+    .image-tablet {
+        display: block;
+    }
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+
+    .image-tablet, .image-mobile {
+        display: none;
+    }
+
+    .image-desktop {
+        display: block;
+    }
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+
+}

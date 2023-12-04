@@ -8,44 +8,79 @@
         content="Textile Tech Science Center | Contact us | Have a question or want to connect? Reach out to us through our contact page. Whether you're seeking information about our exhibits, planning an event, or just want to share your thoughts, we're here to unravel the mysteries of textile science together. Let's weave connections and foster a community passionate about the art and science of textiles." />
     <meta property="og:title" content="Textile Tech Science Center" />
     <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="icon" href="/assets/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/assets/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/assets/favicon_io/android-chrome-192x192.png" sizes="192x192" type="image/png">
-    <link rel="icon" href="/assets/favicon_io/android-chrome-512x512.png" sizes="512x512" type="image/png">
-    <link rel="icon" href="/assets/favicon_io/apple-touch-icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/nav.css">
+    <script src="https://kit.fontawesome.com/5ba45fa1e0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/assets/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/assets/favicon/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link rel="icon" href="/assets/favicon/apple-touch-icon.png" type="image/png">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/index.html" ><img src="/assets/logo/logo-05.svg" alt="logo" class="nav-logo"></a>
+            <input type="checkbox" id="nav-menu-button">
+            <label for="nav-menu-button"><i class="fa-solid fa-bars"></i></label>
+            <ul class="nav-menu-items">
+                <li><a href="/index.html" class="nav-home">Home</a></li>
+                <li><a href="/html/exhibitions.html" class="nav-exhibits">Exhibits</a></li>
+                <li><a href="/html/events.html" class="nav-events">Events</a></li>
+                <li><a href="/html/articles.html" class="nav-articles">Articles</a></li>
+                <li><a href="/html/contact.html" class="nav-contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <form action="">
-            <!-- Name -->
-            <label for=""></label>
-            <input type="text">
+        <section class="hero-banner">
+        <img src="/assets/contact/mobile/header-image.jpg" alt="" class="image-mobile">
+        <img src="/assets/contact/tablet/header-image.jpg" alt="" class="image-tablet">
+        <img src="/assets/contact/desktop/header-image.jpg" alt="" class="image-desktop">
+        </section>
 
-            <!-- Email -->
-            <label for=""></label>
-            <input type="email">
+        <section class="form-container">
+            <form action="#">
+                <!-- Name -->
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Full name">
+    
+                <!-- Email -->
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email adress">
+    
+                <!-- Select -->
+                <label for="contact-reason"></label>
+                <select name="contact-reason" id="contact-reason">
+                    <option value="" selected disabled>Reason for contact:</option>
+                    <option value="report-a-problem">Report a problem</option>
+                    <option value="event-information">Event information</option>
+                    <option value="exhibition-information">Exhibition information</option>
+                    <option value="accessability">Accessability</option>
+                    <option value="work-with-us">Work with us</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+    
+                <button>Send</button>
+            </form>
 
-            <!-- Select -->
-            <label for="">Reason for contact: </label>
-            <select name="" id="">
-                <option value="">Report a problem</option>
-                <option value="">Event information</option>
-                <option value="">Exhibition information</option>
-                <option value="">Accessability</option>
-                <option value="">Work with us</option>
-                <option value="">Other</option>
-            </select>
+            <div class="svg-letter">
+            <!-- SVG animation -->
+            </div>
 
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </section>
+        
 
-            <button>Send</button>
-        </form>
-
-        <article>
-            <img src="#" alt="">
+        <article class="location">
+            <iframe src="https://api.mapbox.com/styles/v1/annaskudsveen/clpjwbkwe00ro01o93an9c59o.html?title=false&access_token=pk.eyJ1IjoiYW5uYXNrdWRzdmVlbiIsImEiOiJjbHAxajg5bjcwajJoMmpxeTlubXBoZG85In0.c-YwdPtcz8xR5KWCbFg4VQ&zoomwheel=false#15.17/59.92865/10.755379" title="Untitled" style="border:none;"></iframe>
             <h2>
                 Where to find us
             </h2>
@@ -67,9 +102,29 @@
             </h3>
             <p>
                 Monday - Friday: 9 am - 5 pm
+                <br>
                 Saturday - Sunday: 9 am - 8 pm
             </p>
         </article>
     </main>
+   
+    <footer>
+        <ul class="footer-links">
+            <li><h4 class="footer-heading">Textile Tech Science Center</h4></li>
+            <li><a href="contact.html">Location</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">Tickets</a></li>
+        </ul>
+        <img src="/assets/logo/logo-02.svg" alt="logo" class="footer-logo">
+        <div>
+            <h4 class="footer-heading heading-social">Follow us</h4>
+            <ul class="footer-social">
+                <li><a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

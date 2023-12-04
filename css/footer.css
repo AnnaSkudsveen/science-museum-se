@@ -1,0 +1,88 @@
+footer {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--primary);
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+footer h4 {
+    letter-spacing: 2px;
+}
+
+.footer-logo {
+    height: 165px;
+    margin: 20px;
+}
+
+.footer-links, .footer-social {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-social {
+ display: flex;
+ justify-content: space-between;
+ gap: 16px;
+}
+
+.heading-social {
+    padding: 8px 0;
+}
+
+.footer-heading {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-links li, .footer-social li, footer ul a, .footer-heading {
+    list-style: none;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.footer-links li {
+    padding: 6px 0;
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+footer{
+    flex-direction: row;
+}
+
+.footer-links, .footer-heading {
+    text-align: start;
+}
+
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}

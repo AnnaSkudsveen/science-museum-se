@@ -1,0 +1,72 @@
+h2 {
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.hero-banner {
+    height: 270px;
+}
+
+.hero-banner img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-banner-header {
+    color: var(--whiteish);
+    position: absolute;
+    top: 167px;
+    padding-left: 30px;
+    font-size: 3rem;
+}
+
+.printing-container, .crafts-container, .fashion-show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .printing-container, .fashion-show-container {
+        flex-direction: row;
+    }
+    .crafts-container {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .home-information {
+        justify-content: center;
+    }
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+
+}

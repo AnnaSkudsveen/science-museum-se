@@ -54,6 +54,10 @@ main {
 
 }
 
+.history-of-textiles-container a {
+    text-decoration: none;
+}
+
 .history-of-textiles-container h2, .sustainable-textiles-container h2 {
     color: var(--tertiary);
 }

@@ -59,6 +59,10 @@ h2 {
     padding: 20px;
 }
 
+.new-exhibit a, .new-event a {
+    text-decoration: none;
+}
+
 .new-exhibit h3, .new-event h3 {
     color: var(--primary);
 }
@@ -93,8 +97,6 @@ h2 {
     align-self: flex-start;
     justify-self: baseline;
 } */
-
-
 
 .new-exhibit-image {
     position: relative;
@@ -181,10 +183,6 @@ h2 {
     grid-area: article-link;
 }
 
-.article-link img {
-    margin: ;
-}
-
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
     height: 216px;
     width: 100vw;
@@ -199,11 +197,11 @@ h2 {
     grid-area: exhibits-link;
 }
 
-.exhibits-link svg {
+/* .exhibits-link svg {
     position: absolute;
     width: 100vw;
     height: auto;
-}
+} */
 
 .contact-us-link {
     grid-area: contact-link;
@@ -269,7 +267,7 @@ h2 {
     } */
 
     .image-links{
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "article-link article-link"
         "tickets-link exhibits-link"

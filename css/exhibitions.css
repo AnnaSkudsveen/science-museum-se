@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-banner {
+    height: 270px;
+}
+
+.hero-banner-header {
+    font-size: 3rem;
+    position: absolute;
+    top: 167px;
+    padding-left: 30px;
+    color: var(--whiteish);
+}
+
+.hero-banner img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.future-textiles-container, .vr-textile-container, .sustainable-textiles-container, .history-of-textiles-container, .printing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.future-textiles-container h2, .vr-textile-container h2, .sustainable-textiles-container h2, .history-of-textiles-container h2, .printing h2 {
+    font-size: 32px;
+}
+
+.history-of-textiles-container a {
+    text-decoration: none;
+}
+
+.history-of-textiles-container h2, .sustainable-textiles-container h2 {
+    color: var(--tertiary);
+}
+
+.printing h2, .future-textiles-container h2 {
+    color: var(--primary);
+}
+
+.vr-textile-container h2 {
+    color: var(--orange);
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .history-of-textiles-container, .sustainable-textiles-container, .future-textiles-container {
+        flex-direction: row;
+    }
+
+    .vr-textile-container, .printing {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .history-of-textiles-container, .printing, .sustainable-textiles-container, .vr-textile-container, .future-textiles-container {
+        max-width: 1280px;
+    }
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+
+}

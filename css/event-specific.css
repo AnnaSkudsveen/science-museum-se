@@ -1,0 +1,137 @@
+.hero-banner {
+    height: 263px;
+}
+
+.hero-banner img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    width: 100vw;
+    height: 99px;
+    background-color: var(--cta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    top: -4px;
+}
+
+.header-text h1 {
+    color: var(--primary);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.part-1, .part-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part-1 {
+    padding-top: 100px;
+}
+
+.event-details {
+    background-color: var(--primary);
+    color: var(--orange);
+    width: 250px;
+    padding: 10px;
+    grid-area: details;
+}
+
+.event-details h2 {
+    margin-top: 16px;
+}
+
+.event-details p {
+    color: var(--whiteish);
+}
+
+.event-details p span {
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.part-1-text {
+    grid-area: text;
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .hero-banner {
+        height: 400px;
+    }
+
+    article {
+        margin: 0px 35px;
+    }
+
+    .event-details {
+        width: 270px;
+        margin: 1rem;
+        align-self: flex-start;
+    }
+
+    .part-1 {
+        display: grid;
+        grid-template-areas: 
+        "text details"
+        ;
+    }
+
+    .part-2 {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .part-2 img {
+        align-self: flex-start;
+    }
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    article {
+        margin: 20px 70px;
+    }
+
+    .event-details{
+        width: 270px;
+    }
+
+    .part-1, .part-2 {
+        max-width: 1024px;
+    }
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+
+}

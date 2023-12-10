@@ -49,6 +49,12 @@ form {
 
 #contact-reason {
     padding-right: 20px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+#message {
+    padding-top: 16px;
 }
 
 ::placeholder {
@@ -59,8 +65,17 @@ form button {
     height: 40px;
     width: 176px;
     font-size: 16px;
-    background-color:  ;
+    background-color: var(--cta);
+    border-radius: 8px;
+    border: none;
+    color: var(--primary);
 }
+
+form button:hover, form button:focus {
+    border: 1px solid var(--primary);
+    background-color: var(--cta-light);
+}
+
 
 .location, .location p {
     background-color: var(--primary);

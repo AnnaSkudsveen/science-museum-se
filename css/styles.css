@@ -133,7 +133,7 @@ h2 {
 }
 
 .home-information {
-    height: 750px;
+    height: auto;
     width: 100vw;
     padding: 20px;
     display: flex;
@@ -156,10 +156,23 @@ h2 {
     border: none;
 }
 
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.articles-1-and-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
 .tree-of-learning {
     height: 265px;
     width: 265px;
-    grid-area: article-1;
 }
 
 .article-1, .article-2 {
@@ -169,18 +182,9 @@ h2 {
     padding: 10px;
 }
 
-.article-1 {
-    grid-area: article-1;
-}
-
-.article-2 {
-    grid-area: article-2;
-}
-
 .article-link {
     height: 320px;
     width: 100vw;
-    grid-area: article-link;
 }
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
@@ -189,13 +193,7 @@ h2 {
     position: relative;
 }
 
-.tickets-link {
-    grid-area: tickets-link;
-}
 
-.exhibits-link {
-    grid-area: exhibits-link;
-}
 
 /* .exhibits-link svg {
     position: absolute;
@@ -203,13 +201,7 @@ h2 {
     height: auto;
 } */
 
-.contact-us-link {
-    grid-area: contact-link;
-}
 
-.events-link {
-    grid-area: events-link;
-}
 
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
@@ -221,17 +213,11 @@ h2 {
         flex-direction: row;
         padding: 35px;
         gap: 20px;
-        height: 500px;
         justify-content: space-around;
     }
 
     .home-information iframe{
         height: 430px;
-    }
-
-    .article-1, .article-2 {
-        padding: 20px;
-        max-width: 464px;
     }
 }
 
@@ -266,13 +252,8 @@ h2 {
         max-height: 189px;
     } */
 
-    .image-links{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "article-link article-link"
-        "tickets-link exhibits-link"
-        "contact-link events-link"
-        ;
+    .home-information {
+        height: auto;
     }
 
     .home-information iframe{
@@ -285,6 +266,46 @@ h2 {
         flex-direction: column;
         width: 498px;
     }
+
+    .articles {
+        flex-direction: row;
+    }
+
+    .article-1, .article-2 {
+        padding: 20px;
+        max-width: 464px;
+    }
+
+    .article-link {
+        grid-area: article-link;
+    }
+
+    .tickets-link {
+        grid-area: tickets-link;
+    }
+    
+    .exhibits-link {
+        grid-area: exhibits-link;
+    }
+
+    .contact-us-link {
+        grid-area: contact-link;
+    }
+    
+    .events-link {
+        grid-area: events-link;
+    }
+
+    .image-links{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "article-link article-link"
+        "tickets-link exhibits-link"
+        "contact-link events-link"
+        ;
+    }
+
+
 }
 
 /* Large (lg) laptops/desktops*/

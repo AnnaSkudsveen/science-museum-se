@@ -1,0 +1,43 @@
+main img {
+    position: relative;
+    bottom: 36px;
+}
+
+.mushroom-1 {
+    height: 77px;
+    top: 603px;
+    left: 446px;
+}
+
+.mushroom-2 {
+    height: 116px;
+    top: 621px;
+    left: 419px;
+}
+
+.mushroom-3 {
+    height: 100px;
+    top: 614px;
+    left: 459px;
+}
+
+.swing-1 {
+    top: 250px;
+    left: 460px;
+    height: 231px;
+    width: 153px;
+}
+
+.apple-1 {
+    width: 100px;
+}
+
+.mushroom-1, .mushroom-2, .mushroom-3, .swing-1, .apple-1, .apple-2, .apple-3, .seaweed-1, .seaweed-2 {
+    position: fixed;
+    z-index: 10;
+}
+
+.mushroom-1 img, .mushroom-2 img, .mushroom-3 img {
+    height: 100%;
+    width: 100%;
+}

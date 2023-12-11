@@ -189,8 +189,13 @@ h2 {
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
     height: 216px;
-    width: 100vw;
-    position: relative;
+    width: auto;
+}
+
+.tickets-link img, .exhibits-link img, .contact-us-link img, .events-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 
@@ -280,6 +285,11 @@ h2 {
         grid-area: article-link;
     }
 
+    .tickets-link, .exhibits-link, .contact-us-link, .events-link {
+        height: 277px;
+        width: auto;
+    }
+
     .tickets-link {
         grid-area: tickets-link;
     }
@@ -296,16 +306,16 @@ h2 {
         grid-area: events-link;
     }
 
-    .image-links{
-        grid-template-columns: 1fr 1fr;
+    .image-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
         grid-template-areas: 
         "article-link article-link"
         "tickets-link exhibits-link"
         "contact-link events-link"
         ;
     }
-
-
 }
 
 /* Large (lg) laptops/desktops*/
@@ -349,6 +359,16 @@ h2 {
 
     .article-1, .article-2 {
         padding: 24px;
+    }
+
+    .image-links {
+        display: grid;
+        grid-template-columns: 2fr, 1fr, 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "article-link tickets-link exhibits-link"
+        "article-link contact-link events-link"
+        ;
     }
 }
 

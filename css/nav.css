@@ -27,7 +27,7 @@ nav {
     list-style: none;
     padding: 16px 0 16px 20px ;
     margin: 0;
-    border-top: 1px solid var(--secondary) ;
+    /* border-top: 1px solid var(--secondary) ; */
 }
 
 nav li a {
@@ -59,22 +59,8 @@ nav li a:hover {
     display: none;
 }
 
-
-.nav-events {
-    color: var(--tertiary);
-}
-
-.nav-home, .nav-contact, nav label {
+.nav-menu-items a, nav label {
     color: var(--secondary);
-}
-
-.nav-exhibits {
-    color: var(--cta);
-    
-}
-
-.nav-articles {
-    color: var(--orange);
 }
 
 /* Small (sm)  portrait tablets and large phones */

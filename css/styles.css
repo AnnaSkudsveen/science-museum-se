@@ -152,13 +152,6 @@ h2 {
     position: relative;
 }
 
-/* .article-link-image {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: #00000091;
-} */
-
 .article-link img {
     height: 80%;
     width: 80%;
@@ -178,6 +171,15 @@ h2 {
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
     height: 216px;
     width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tickets-link h3, .exhibits-link h3, .contact-us-link h3, .events-link h3 {
+    position: absolute;
+    z-index: 30;
+    bottom: 15px;
+
 }
 
 .tickets-link img, .exhibits-link img, .contact-us-link img, .events-link img {
@@ -186,16 +188,28 @@ h2 {
     object-fit: cover; 
 }
 
-/* .exhibits-link svg {
+
+.tickets-link, .exhibits-link, .contact-us-link, .events-link, .article-link {
+    position: relative;
+}
+
+.exhibits-link svg, .events-link svg, .tickets-link svg, .contact-us-link svg {
     position: absolute;
-    width: 100vw;
-    height: auto;
-} */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 20;
+}
 
 @media (min-width: 480px) {
     .article-link h3 {
         margin-left: 80px;
         width: 250px;
+    }
+
+    .tickets-link, .exhibits-link, .contact-us-link, .events-link {
+        height: 300px;
     }
 }
 
@@ -214,6 +228,14 @@ h2 {
 
     .home-information iframe{
         height: 430px;
+    }
+
+    .article-link h3 {
+        width: 454px;
+    }
+
+    .tickets-link, .exhibits-link, .contact-us-link, .events-link {
+        height: 360px;
     }
 }
 
@@ -273,10 +295,6 @@ h2 {
         width: 600px;
         top: 475px;
         font-size: 34px;
-    }
-
-    .tickets-link img, .exhibits-link img, .contact-us-link img, .events-link img {
-
     }
 
     .article-link img {
@@ -367,9 +385,13 @@ h2 {
         ;
     }
 
+    .article-link {
+        height: 553px;
+    }
+
     .article-link h3 {
         width: 410px;
-        top: 475px;
+        top: 276px;
     }
 }
 
@@ -384,7 +406,6 @@ h2 {
     .article-link h3 {
         margin-left: 43px;
         width: 503px;
-        top: 475px;
     }
 }
 

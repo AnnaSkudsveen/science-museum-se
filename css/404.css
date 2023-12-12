@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    width: 100vw;
+    height: 100%;
+    align-self: baseline;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--tertiary);
+    margin: 20px;
+}
+
+.yarn-ball {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    /* display: inline;
+    position: relative;
+    left: 0; */
+}
+
+@media (min-width: 480px) {
+    /* .yarn-ball {
+        right: -281px;
+    } */
+}
+
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+    /* .yarn-ball {
+        right: -356px;
+    } */
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* margin-bottom: 150px; */
+    }
+
+    .yarn-ball {
+        position: relative;
+        right: 0;
+        top: 100px;
+        margin: 0;
+    }
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+
+}

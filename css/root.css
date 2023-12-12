@@ -73,6 +73,10 @@ a:hover {
     .image-desktop {
         display: block;
     }
+
+    /* .image-link .image-desktop {
+        display: grid;
+    } */
 }
 
 /* Extra Large (xl) large laptops and desktops*/

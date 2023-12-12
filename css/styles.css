@@ -1,5 +1,5 @@
 h1 {
-    color: var(--blackish);
+    color: var(--whiteish);
     font-size: 32px;
     margin-top: 0;
     bottom: 160px;
@@ -7,6 +7,13 @@ h1 {
 
 h2 {
     color: var(--orange);
+}
+
+.nav-menu-items .nav-home {
+    color: var(--cta);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dashed;
 }
 
 .blue-background {
@@ -32,6 +39,7 @@ h2 {
 .hero-banner {
     position: relative;
     height: 460px;
+    background-color: #000;
 }
 
 .hero-banner h1, .hero-banner h2 {
@@ -49,6 +57,7 @@ h2 {
     width: 100vw;
     height: 100%;
     object-fit: cover;
+    opacity: 0.8;
 }
 
 .new-exhibit, .new-event {
@@ -57,6 +66,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    /* max-width: 600px; */
 }
 
 .new-exhibit a, .new-event a {
@@ -83,22 +93,6 @@ h2 {
 .new-exhibit-image {
     display: flex;
     justify-content: center;
-    position: relative;
-}
-
-/* .new-exhibit-yarn-ball {
-    max-height: 40vw;
-    width: auto;
-    position: absolute;
-    top: -35px;
-    left: -135px;
-    z-index: 20;
-    display: flex;
-    align-self: flex-start;
-    justify-self: baseline;
-} */
-
-.new-exhibit-image {
     position: relative;
     max-width: 600px;
 }
@@ -133,12 +127,14 @@ h2 {
 }
 
 .home-information {
-    height: 750px;
+    height: auto;
     width: 100vw;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: 2px;
 }
 
 .home-information .home-information-content {
@@ -156,59 +152,88 @@ h2 {
     border: none;
 }
 
-.tree-of-learning {
-    height: 265px;
-    width: 265px;
-    grid-area: article-1;
-}
-
-.article-1, .article-2 {
-    background-color: var(--secondary);
-    max-width: 266px;
-    margin: auto;
-    padding: 10px;
-}
-
-.article-1 {
-    grid-area: article-1;
-}
-
-.article-2 {
-    grid-area: article-2;
+.image-links {
+    position: relative;
+    top: 1px;
 }
 
 .article-link {
     height: 320px;
     width: 100vw;
-    grid-area: article-link;
+    position: relative;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-link img {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.article-link-h3 {
+    position: absolute;
+    top: 156px;
+    left: 51px;
+    width: 250px;
+    color: var(--cta);
 }
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
     height: 216px;
-    width: 100vw;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tickets-link h3, .exhibits-link h3, .contact-us-link h3, .events-link h3 {
+    position: absolute;
+    z-index: 30;
+    bottom: 15px;
+
+}
+
+.tickets-link img, .exhibits-link img, .contact-us-link img, .events-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.tickets-link, .exhibits-link, .contact-us-link, .events-link, .article-link {
     position: relative;
 }
 
-.tickets-link {
-    grid-area: tickets-link;
-}
-
-.exhibits-link {
-    grid-area: exhibits-link;
-}
-
-/* .exhibits-link svg {
+.exhibits-link svg, .events-link svg, .tickets-link svg, .contact-us-link svg {
     position: absolute;
-    width: 100vw;
-    height: auto;
-} */
-
-.contact-us-link {
-    grid-area: contact-link;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 20;
 }
 
-.events-link {
-    grid-area: events-link;
+@media (min-width: 480px) {
+    .article-link-h3 {
+        margin-left: 80px;
+        width: 250px;
+    }
+
+    .tickets-link, .exhibits-link, .contact-us-link, .events-link {
+        height: 300px;
+    }
+
+    .new-exhibit-image .image-tablet, .new-event-image .image-tablet {
+        display: flex;
+    }
+    
+    .new-exhibit-image .image-mobile, .new-event-image .image-mobile {
+        display: none;
+    }
 }
 
 /* Small (sm)  portrait tablets and large phones */
@@ -221,7 +246,6 @@ h2 {
         flex-direction: row;
         padding: 35px;
         gap: 20px;
-        height: 500px;
         justify-content: space-around;
     }
 
@@ -229,9 +253,12 @@ h2 {
         height: 430px;
     }
 
-    .article-1, .article-2 {
-        padding: 20px;
-        max-width: 464px;
+    .article-link-h3 {
+        width: 454px;
+    }
+
+    .tickets-link, .exhibits-link, .contact-us-link, .events-link {
+        height: 360px;
     }
 }
 
@@ -261,18 +288,9 @@ h2 {
     .new-event {
         flex-direction: row-reverse;
     }
-    
-    /* .new-exhibit-yarn-ball {
-        max-height: 189px;
-    } */
 
-    .image-links{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "article-link article-link"
-        "tickets-link exhibits-link"
-        "contact-link events-link"
-        ;
+    .home-information {
+        height: auto;
     }
 
     .home-information iframe{
@@ -284,6 +302,60 @@ h2 {
         justify-content: space-around;
         flex-direction: column;
         width: 498px;
+    }
+
+    .article-link {
+        grid-area: article-link;
+        height: 834px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-link-h3 {
+        margin-left: 40px;
+        width: 600px;
+        top: 475px;
+        font-size: 34px;
+    }
+
+    .article-link img {
+        object-fit: cover;
+        height: 80%;
+        width: 80%;
+    }
+
+    .tickets-link, .exhibits-link, .contact-us-link, .events-link {
+        height: 277px;
+        width: auto;
+    }
+
+    .tickets-link {
+        grid-area: tickets-link;
+    }
+    
+    .exhibits-link {
+        grid-area: exhibits-link;
+    }
+
+    .contact-us-link {
+        grid-area: contact-link;
+    }
+    
+    .events-link {
+        grid-area: events-link;
+    }
+
+    .image-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "article-link article-link"
+        "tickets-link exhibits-link"
+        "contact-link events-link"
+        ;
     }
 }
 
@@ -317,6 +389,10 @@ h2 {
         display: flex;
     } */
 
+    .new-exhibit-image .image-tablet, .new-event-image .image-tablet {
+        display: none;
+    }
+
     .home-information {
         height: 664px;
     }
@@ -326,8 +402,23 @@ h2 {
         width: 491px;
     }
 
-    .article-1, .article-2 {
-        padding: 24px;
+    .image-links {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "article-link tickets-link exhibits-link"
+        "article-link contact-link events-link"
+        ;
+    }
+
+    .article-link {
+        height: 553px;
+    }
+
+    .article-link-h3 {
+        width: 410px;
+        top: 276px;
     }
 }
 
@@ -337,6 +428,11 @@ h2 {
     /* Your styles for the extra large breakpoint here */
     .home-information {
         justify-content: center;
+    }
+
+    .article-link h3 {
+        margin-left: 43px;
+        width: 503px;
     }
 }
 

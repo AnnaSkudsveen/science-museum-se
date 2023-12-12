@@ -14,6 +14,13 @@ h3 {
     font-size: 1.5rem;
 }
 
+.nav-menu-items .nav-events {
+    color: var(--cta);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dashed;
+}
+
 .hero-banner {
     height: 270px;
 }

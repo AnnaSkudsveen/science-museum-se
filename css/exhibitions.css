@@ -3,6 +3,16 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+.nav-menu-items .nav-exhibits {
+    color: var(--cta);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dashed;
+}
+
+
+
 .hero-banner {
     height: 270px;
 }

@@ -1,4 +1,11 @@
- .hero-banner img {
+.nav-menu-items .nav-contact {
+    color: var(--cta);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dashed;
+}
+
+.hero-banner img {
     width: 100vw;
     height: 100%;
     object-fit: cover;

@@ -5,6 +5,10 @@
     text-decoration-style: dashed;
 }
 
+main {
+    background-color: var(--primary);
+}
+
 .hero-banner img {
     width: 100vw;
     height: 100%;
@@ -13,16 +17,11 @@
 
 .form-container {
     width: 100vw;
-    /* justify-content: center; */
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.svg-letter {
-    max-height: 453px;
-    width: 450px;
 }
 
 form {
@@ -35,7 +34,7 @@ form {
 
 #name, #email, #contact-reason, #message {
     border-radius: 8px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     background-color: var(--secondary-light);
     padding-left: 20px;
     font-size: 1rem;
@@ -76,16 +75,27 @@ form button {
     border-radius: 8px;
     border: none;
     color: var(--primary);
+    align-self: flex-start;
 }
 
 form button:hover, form button:focus {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     background-color: var(--cta-light);
 }
 
+.map {
+    margin: 20px;
+    width: 80%; 
+    max-width: 751px;
+    height: 415px;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
 
 .location, .location p {
-    background-color: var(--primary);
     color: var(--secondary);
     margin: 0;
 }
@@ -98,21 +108,18 @@ form button:hover, form button:focus {
 .location {
     display: flex;
     flex-direction: column;
+    
     padding: 30px 20px;
+    max-width: 1024px;
 }
 
-.location iframe {
-    width: 100%; 
-    height: 400px;
-}
+
 
 @media (min-width: 640px) {
     .form-container {
         flex-direction: row;
-        max-width: 689px;
-        justify-content: space-around;
     }
-    
+
     form {
         margin: 20px;
     }

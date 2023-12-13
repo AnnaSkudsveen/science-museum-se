@@ -17,13 +17,24 @@ h1 {
     margin: 20px;
 }
 
+@keyframes bounce-in {
+    0%, 33%, 66%, 100% {
+        transform: (translate());
+    }
+
+    16%, 49%, 83% {
+        transform: ();
+    }
+}
+
 .yarn-ball {
     position: relative;
     top: 0;
     left: -99px;
     transition: 4s;
     transform: translateX(283px);
-
+    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
 
     /* display: inline;
     position: relative;

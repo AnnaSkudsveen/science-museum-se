@@ -16,7 +16,13 @@ footer h4 {
 
 .footer-logo {
     height: 165px;
+    width: 150px;
     margin: 20px;
+}
+
+.footer-logo svg {
+    width: 100%;
+    height: 100%;
 }
 
 .footer-links, .footer-social {

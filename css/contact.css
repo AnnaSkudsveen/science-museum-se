@@ -32,6 +32,10 @@ form {
     gap: 8px;
 }
 
+form h2 {
+    color: var(--orange);
+}
+
 #name, #email, #contact-reason, #message {
     border-radius: 8px;
     border: 1px solid var(--secondary);

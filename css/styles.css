@@ -177,10 +177,11 @@ h2 {
 
 .article-link-h3 {
     position: absolute;
-    top: 156px;
+    top: 140px;
     left: 51px;
     width: 250px;
     color: var(--cta);
+    font-size: 1.5rem;
 }
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
@@ -190,11 +191,37 @@ h2 {
     justify-content: center;
 }
 
-.tickets-link h3, .exhibits-link h3, .contact-us-link h3, .events-link h3 {
+.tickets-link h3, .exhibits-link .h3, .contact-us-link .h3, .events-link .h3 {
     position: absolute;
     z-index: 30;
-    bottom: 15px;
+    bottom: 10px;
+    font-size: 2rem;
+}
 
+.image-links a {
+    text-decoration: none;
+}
+
+.image-links a:hover, .image-links a:focus, .tickets-link h3:hover, .tickets-link h3:focus {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+}
+
+.tickets-link h3 {
+    color: var(--primary);
+}
+
+.exhibits-link .h3{
+    color: var(--secondary);
+}
+
+.contact-us-link .h3{
+    color: var(--tertiary);
+}
+
+.events-link .h3 {
+    color: var(--secondary);
 }
 
 .tickets-link img, .exhibits-link img, .contact-us-link img, .events-link img {
@@ -324,6 +351,11 @@ h2 {
         object-fit: cover;
         height: 80%;
         width: 80%;
+    }
+
+    .tickets-link h3, .exhibits-link .h3, .contact-us-link .h3, .events-link .h3 {
+        font-size: 36px;
+        bottom: -20px;
     }
 
     .tickets-link, .exhibits-link, .contact-us-link, .events-link {

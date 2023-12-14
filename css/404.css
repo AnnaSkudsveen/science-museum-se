@@ -19,11 +19,11 @@ h1 {
 
 @keyframes bounce-in {
     0%, 33%, 66%, 100% {
-        transform: (translate());
+        transform: (translateY(0));
     }
 
     16%, 49%, 83% {
-        transform: ();
+        transformX: (30px);
     }
 }
 

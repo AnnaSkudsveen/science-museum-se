@@ -1,5 +1,6 @@
 [Website](https://science-museum-se.vercel.app/)
 # Science Museum website- Semester Exam
+![screenshot-homepage](https://github.com/AnnaSkudsveen/science-museum-se/assets/142508748/f446f952-720e-428c-ac52-40720b5c563d)
 
 ### Description
 The aim with this project was to create a website for children interested in museum visits, doubling as an educational resource for teachers. The design, featuring vibrant colors and a whimsical vibe, catered to 7–14-year-olds. The website has a main, exhibitions, events, and contact page, as well as a detail event, detail exhibit and one article page.

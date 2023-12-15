@@ -7,21 +7,20 @@ main {
 .nav-menu-items .nav-exhibits {
     color: var(--cta);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
     text-decoration-style: dashed;
 }
 
-
-
 .hero-banner {
-    height: 270px;
+    height: 16.875rem;
+    background-color: #000;
 }
 
 .hero-banner-header {
     font-size: 3rem;
     position: absolute;
-    top: 167px;
-    padding-left: 30px;
+    top: 10.438rem;
+    padding-left: 1.875rem;
     color: var(--whiteish);
 }
 
@@ -29,6 +28,7 @@ main {
     width: 100vw;
     height: 100%;
     object-fit: cover;
+    opacity: 0.5;
 }
 
 .future-textiles-container, .vr-textile-container, .sustainable-textiles-container, .history-of-textiles-container, .printing {
@@ -36,8 +36,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25rem;
+    gap: 1.25rem;
 }
 
 .future-textiles-container h2, .vr-textile-container h2, .sustainable-textiles-container h2, .history-of-textiles-container h2, .printing h2 {
@@ -60,11 +60,6 @@ main {
     color: var(--orange);
 }
 
-/* Small (sm)  portrait tablets and large phones */
-@media (min-width: 640px) {
-
-}
-
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -75,25 +70,34 @@ main {
     .vr-textile-container, .printing {
         flex-direction: row-reverse;
     }
+
+    .history-of-textiles-container, .sustainable-textiles-container, .future-textiles-container, .vr-textile-container, .printing {
+        margin: 0 2.188rem;
+    }
 }
 
 /* Large (lg) laptops/desktops*/
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
-    
+    .hero-banner {
+        height: 26rem;
+    }
+
+    .hero-banner-header {
+        font-size: 6rem;
+        top: 200px;
+        margin-left: 4.5rem;
+    }
+
+    .history-of-textiles-container, .sustainable-textiles-container, .future-textiles-container, .vr-textile-container, .printing {
+        margin: 0 4.375rem;
+    }
 }
 
 /* Extra Large (xl) large laptops and desktops*/
-
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     .history-of-textiles-container, .printing, .sustainable-textiles-container, .vr-textile-container, .future-textiles-container {
         max-width: 1280px;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

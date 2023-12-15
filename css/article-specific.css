@@ -5,7 +5,7 @@ main {
 }
 
 .hero-banner {
-    height: 16.26rem;
+    height: 16.25rem;
 }
 
 .hero-banner img {
@@ -15,7 +15,7 @@ main {
 }
 
 .header h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: var(--whiteish);
     margin: 0.5rem 1.25rem;
 }
@@ -28,6 +28,14 @@ main {
     align-items: center;
 }
 
+.part-1, .part-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
 article {
     margin: 1.25rem;
     display: flex;
@@ -37,21 +45,6 @@ article {
     gap: 1.25rem;
 }
 
-article img {
-    width: 80vw;
-    object-fit: cover;
-    height: 100%;
-}
-
-.part-1, .part-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-}
-
-/* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
     .hero-banner {
@@ -60,6 +53,10 @@ article img {
 
     article {
         margin: 1.25rem 2.188rem;
+    }
+
+    .part-1, .part-2 {
+       justify-content: space-around; 
     }
 
     .part-1 {

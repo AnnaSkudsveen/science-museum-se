@@ -1,8 +1,12 @@
 .nav-menu-items .nav-contact {
     color: var(--cta);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
     text-decoration-style: dashed;
+}
+
+main {
+    background-color: var(--primary);
 }
 
 .hero-banner img {
@@ -13,16 +17,11 @@
 
 .form-container {
     width: 100vw;
-    /* justify-content: center; */
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.svg-letter {
-    max-height: 453px;
-    width: 450px;
 }
 
 form {
@@ -33,11 +32,15 @@ form {
     gap: 8px;
 }
 
+form h2 {
+    color: var(--orange);
+}
+
 #name, #email, #contact-reason, #message {
-    border-radius: 8px;
-    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary);
     background-color: var(--secondary-light);
-    padding-left: 20px;
+    padding-left: 1.25rem;
     font-size: 1rem;
     width: 100%;
 }
@@ -47,7 +50,7 @@ form {
 }
 
 #name, #email, #contact-reason {
-    height: 40px;
+    height: 2.5rem;
 }
 
 #contact-reason, #message {
@@ -55,13 +58,13 @@ form {
 }
 
 #contact-reason {
-    padding-right: 20px;
+    padding-right: 1.25rem;
     color: var(--primary);
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 #message {
-    padding-top: 16px;
+    padding-top: 1rem;
 }
 
 ::placeholder {
@@ -69,57 +72,57 @@ form {
 }
 
 form button {
-    height: 40px;
-    width: 176px;
-    font-size: 16px;
+    height: 2.5rem;
+    width: 11rem;
+    font-size: 1rem;
     background-color: var(--cta);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: none;
     color: var(--primary);
+    align-self: flex-start;
 }
 
 form button:hover, form button:focus {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     background-color: var(--cta-light);
 }
 
+.map {
+    margin: 1.25rem;
+    width: 80%; 
+    max-width: 751px;
+    height: 26rem;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
 
 .location, .location p {
-    background-color: var(--primary);
     color: var(--secondary);
     margin: 0;
 }
 
 .location h2 {
     color: var(--orange);
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .location {
     display: flex;
     flex-direction: column;
-    padding: 30px 20px;
-}
-
-.location iframe {
-    width: 100%; 
-    height: 400px;
+    
+    padding: 1.875rem 1.25rem;
+    max-width: 1024px;
 }
 
 @media (min-width: 640px) {
     .form-container {
         flex-direction: row;
-        max-width: 689px;
-        justify-content: space-around;
     }
-    
+
     form {
-        margin: 20px;
+        margin: 1.25rem;
     }
-}
-
-/* Medium (md) landscape tablets*/
-@media (min-width: 768px) {
-    /* Your styles for the medium breakpoint here */
-
 }

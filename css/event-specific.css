@@ -1,5 +1,5 @@
 .hero-banner {
-    height: 263px;
+    height: 16.5rem;
 }
 
 .hero-banner img {
@@ -16,12 +16,12 @@ main {
 
 .header-text {
     width: 100vw;
-    height: 99px;
+    height: 6.25rem;
     background-color: var(--cta);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     position: relative;
     top: -4px;
 }
@@ -40,19 +40,19 @@ main {
 }
 
 .part-1 {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .event-details {
     background-color: var(--primary);
     color: var(--orange);
-    width: 250px;
-    padding: 10px;
+    width: 15.625rem;
+    padding: 0.625rem;
     grid-area: details;
 }
 
 .event-details h2 {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .event-details p {
@@ -61,31 +61,26 @@ main {
 
 .event-details p span {
     font-weight: bold;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 }
 
 .part-1-text {
     grid-area: text;
 }
 
-/* Small (sm)  portrait tablets and large phones */
-@media (min-width: 640px) {
-
-}
-
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
     .hero-banner {
-        height: 400px;
+        height: 25rem;
     }
 
     article {
-        margin: 0px 35px;
+        margin: 0 2.188rem;
     }
 
     .event-details {
-        width: 270px;
+        width: 16.875rem;
         margin: 1rem;
         align-self: flex-start;
     }
@@ -99,7 +94,7 @@ main {
 
     .part-2 {
         flex-direction: row;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .part-2 img {
@@ -111,27 +106,14 @@ main {
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
     article {
-        margin: 20px 70px;
+        margin: 1.25rem 2.188rem;
     }
 
     .event-details{
-        width: 270px;
+        width: 16.875rem;
     }
 
     .part-1, .part-2 {
         max-width: 1024px;
     }
-}
-
-/* Extra Large (xl) large laptops and desktops*/
-
-@media (min-width: 1280px) {
-    /* Your styles for the extra large breakpoint here */
-
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

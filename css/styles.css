@@ -1,8 +1,8 @@
 h1 {
     color: var(--whiteish);
-    font-size: 32px;
+    font-size: 2rem;
     margin-top: 0;
-    bottom: 160px;
+    bottom: 10rem;
 }
 
 h2 {
@@ -10,47 +10,50 @@ h2 {
 }
 
 .nav-menu-items .nav-home {
-    color: var(--cta);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
     text-decoration-style: dashed;
 }
 
-.blue-background {
+.nav-menu-items .nav-home, .hero-banner h2 {
+    color: var(--cta);
+}
+
+/* .blue-background {
     background-color: var(--secondary);
-}
+} */
 
-.orange-background, .orange-background-article {
+/* .orange-background, .orange-background-article {
     background-color: var(--orange);
-}
+} */
 
-.green-background, .green-background-article {
+/* .green-background, .green-background-article {
     background-color: var(--cta);
-}
+} */
 
 .pink-background {
     background-color: var(--tertiary);
 }
 
-.primary-background {
+/* .primary-background {
     background-color: var(--primary);
-}
+} */
 
 .hero-banner {
     position: relative;
-    height: 460px;
+    height: 28.75rem;
     background-color: #000;
+    width: 100vw;
 }
 
 .hero-banner h1, .hero-banner h2 {
     position: absolute;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .hero-banner h2 {
-    color: var(--cta);
-    bottom: 130px;
-    font-size: 24px;
+    bottom: 8.125rem;
+    font-size: 1.5rem;
 }
 
 .hero-banner img {
@@ -65,8 +68,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    /* max-width: 600px; */
+    padding: 1.25rem;
 }
 
 .new-exhibit a, .new-event a {
@@ -78,58 +80,27 @@ h2 {
 }
 
 .new-event-text, .new-exhibit-text {
-     max-width: 350px;
-}
-
-.background-new-exhibit {
-    height: 177px;
-    width: 173px;
-    z-index: 0;
-    position: absolute;
-    right: 28px;
-    bottom: 20px;
+     max-width: 21.875rem;
 }
 
 .new-exhibit-image {
     display: flex;
     justify-content: center;
     position: relative;
-    max-width: 600px;
-}
-
-.orange-background-exhibit {
-    position: absolute;
-    right: 0;
-    height: 189px;
-    width: 189px;
+    max-width: 37.5rem;
 }
 
 .background-article {
-    height: 112px;
-    width: 265px;
+    height: 7rem;
+    width: 16.563rem;
     z-index: -10;
     position: absolute;
-}
-
-.green-circle {
-    width: 57px;
-    height: 57px;
-    border-radius: 50%;
-    position: absolute;
-    right: 17px;
-}
-
-.event-yarn-ball {
-    height: 104px;
-    width: 104px;
-    position: absolute;
-    right: 22px;
 }
 
 .home-information {
     height: auto;
     width: 100vw;
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +118,7 @@ h2 {
 }
 
 .home-information iframe {
-    height: 250px;
+    height: 15.625rem;
     width: 100%;
     border: none;
 }
@@ -155,10 +126,11 @@ h2 {
 .image-links {
     position: relative;
     top: 1px;
+    width: 100vw;
 }
 
 .article-link {
-    height: 320px;
+    height: 20rem;
     width: 100vw;
     position: relative;
     background-color: var(--primary);
@@ -177,24 +149,51 @@ h2 {
 
 .article-link-h3 {
     position: absolute;
-    top: 156px;
-    left: 51px;
-    width: 250px;
+    top: 8.75rem;
+    left: 3.25rem;
+    width: 15.625rem;
     color: var(--cta);
+    font-size: 1.5rem;
 }
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link {
-    height: 216px;
+    height: 13.5rem;
     width: auto;
     display: flex;
     justify-content: center;
 }
 
-.tickets-link h3, .exhibits-link h3, .contact-us-link h3, .events-link h3 {
+.tickets-link h3, .exhibits-link .h3, .contact-us-link .h3, .events-link .h3 {
     position: absolute;
     z-index: 30;
-    bottom: 15px;
+    bottom: 0.625rem;
+    font-size: 2rem;
+}
 
+.image-links a {
+    text-decoration: none;
+}
+
+.image-links a:hover, .image-links a:focus, .tickets-link h3:hover, .tickets-link h3:focus {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+}
+
+.tickets-link h3 {
+    color: var(--primary);
+}
+
+.exhibits-link .h3{
+    color: var(--secondary);
+}
+
+.contact-us-link .h3{
+    color: var(--tertiary);
+}
+
+.events-link .h3 {
+    color: var(--secondary);
 }
 
 .tickets-link img, .exhibits-link img, .contact-us-link img, .events-link img {
@@ -202,7 +201,6 @@ h2 {
     height: 100%;
     object-fit: cover; 
 }
-
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link, .article-link {
     position: relative;
@@ -219,12 +217,12 @@ h2 {
 
 @media (min-width: 480px) {
     .article-link-h3 {
-        margin-left: 80px;
-        width: 250px;
+        margin-left: 5rem;
+        width: 15.625rem;
     }
 
     .tickets-link, .exhibits-link, .contact-us-link, .events-link {
-        height: 300px;
+        height: 18.75rem;
     }
 
     .new-exhibit-image .image-tablet, .new-event-image .image-tablet {
@@ -239,26 +237,26 @@ h2 {
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
     .hero-banner h1, .hero-banner h2 {
-        margin-left: 35px;
+        margin-left: 2.188rem;
     }
 
     .home-information {
         flex-direction: row;
-        padding: 35px;
-        gap: 20px;
+        padding: 2.188rem;
+        gap: 1.25rem;
         justify-content: space-around;
     }
 
     .home-information iframe{
-        height: 430px;
+        height: 26.875rem;
     }
 
     .article-link-h3 {
-        width: 454px;
+        width: 28.375rem;
     }
 
     .tickets-link, .exhibits-link, .contact-us-link, .events-link {
-        height: 360px;
+        height: 22.5rem;
     }
 }
 
@@ -266,15 +264,15 @@ h2 {
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
     .hero-banner {
-        height: 520px;
+        height: 32.5rem;
     }
 
     .hero-banner h1 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .hero-banner h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .new-exhibit, .new-event {
@@ -294,19 +292,19 @@ h2 {
     }
 
     .home-information iframe{
-        height: 400px;
+        height: 25rem;
     }
 
     .home-information-text {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        width: 498px;
+        width: 31.125rem;
     }
 
     .article-link {
         grid-area: article-link;
-        height: 834px;
+        height: 52.125rem;
         width: auto;
         display: flex;
         justify-content: center;
@@ -314,10 +312,10 @@ h2 {
     }
 
     .article-link-h3 {
-        margin-left: 40px;
-        width: 600px;
-        top: 475px;
-        font-size: 34px;
+        margin-left: 4.25rem;
+        width:37.5rem;
+        top: 29.688rem;
+        font-size: 2rem;
     }
 
     .article-link img {
@@ -326,8 +324,13 @@ h2 {
         width: 80%;
     }
 
+    .tickets-link h3, .exhibits-link .h3, .contact-us-link .h3, .events-link .h3 {
+        font-size: 2rem;
+        bottom: -1.25rem;
+    }
+
     .tickets-link, .exhibits-link, .contact-us-link, .events-link {
-        height: 277px;
+        height: 17.25rem;
         width: auto;
     }
 
@@ -363,20 +366,20 @@ h2 {
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
     .hero-banner {
-        height: 664px;
+        height: 41.5rem;
     }
 
     .hero-banner h1 {
-        font-size: 96px;
+        font-size: 6rem;
     }
 
     .hero-banner h2 {
-        font-size: 48px;
+        font-size: 3rem;
 
     }
 
     .hero-banner h1, .hero-banner h2 {
-        margin-left: 70px;
+        margin-left: 4.375rem;
     }
 
     .new-event, .new-exhibit, .home-information-content, .articles {
@@ -384,22 +387,17 @@ h2 {
         margin: auto;
     }
 
-    /* .news {
-        max-width: 1024px;
-        display: flex;
-    } */
-
     .new-exhibit-image .image-tablet, .new-event-image .image-tablet {
         display: none;
     }
 
     .home-information {
-        height: 664px;
+        height: 41.5rem;
     }
 
     .home-information iframe{
-        height: 491px;
-        width: 491px;
+        height: 30.688rem;
+        width: 30.688rem;
     }
 
     .image-links {
@@ -413,17 +411,17 @@ h2 {
     }
 
     .article-link {
-        height: 553px;
+        height: 34.5rem;
     }
 
     .article-link-h3 {
-        width: 410px;
-        top: 276px;
+        width: 25.625rem;
+        top: 17.25rem;
+        margin-left: 1rem;
     }
 }
 
 /* Extra Large (xl) large laptops and desktops*/
-
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     .home-information {
@@ -431,13 +429,7 @@ h2 {
     }
 
     .article-link h3 {
-        margin-left: 43px;
-        width: 503px;
+        margin-left: 2.625rem;
+        width: 31.438rem;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

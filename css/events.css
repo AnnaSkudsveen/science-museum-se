@@ -17,12 +17,12 @@ h3 {
 .nav-menu-items .nav-events {
     color: var(--cta);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
     text-decoration-style: dashed;
 }
 
 .hero-banner {
-    height: 270px;
+    height: 16.875rem;
     background-color: #000;
 }
 
@@ -36,8 +36,8 @@ h3 {
 .hero-banner-header {
     color: var(--whiteish);
     position: absolute;
-    top: 167px;
-    padding-left: 30px;
+    top: 10.5rem;
+    padding-left: 1.875rem;
     font-size: 3rem;
 }
 
@@ -54,8 +54,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25rem;
+    gap: 1.25rem;
 }
 
 /* Medium (md) landscape tablets*/
@@ -70,7 +70,7 @@ h3 {
     }
 
     .printing-container, .crafts-container, .fashion-show-container {
-        margin-left: 35px;
+        margin-left: 2.188rem;
     }
 }
 
@@ -78,12 +78,12 @@ h3 {
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
     .hero-banner {
-        height: 416px;
+        height: 26rem;
     }
 
     .hero-banner-header {
         font-size: 6rem;
-        top: 200px;
+        top: 12.5rem;
         margin-left: 4.5rem;
     }
 }

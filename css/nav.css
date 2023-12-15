@@ -9,24 +9,24 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary);
-    height: 48px;
+    height: 3rem;
     align-items: center;
     position: relative;
 }
 
 .nav-logo {
-    height: 36px;
+    height: 2.25rem;
     display: flex;
     align-items: center;
 }
 
 .nav-logo, nav label {
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .nav-menu-items li {
     list-style: none;
-    padding: 16px 0 16px 20px ;
+    padding: 1rem 0 1rem 1.25rem;
     margin: 0;
 }
 
@@ -38,7 +38,7 @@ nav li a {
 nav li a:hover {
     text-decoration: underline;
     text-decoration-style: dashed;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
 }
 
 #nav-menu-button:checked ~ .nav-menu-items {
@@ -46,8 +46,8 @@ nav li a:hover {
     position: absolute;
     background-color: var(--primary);
     width: 100vw;
-    top: 48px;
-    margin: 0px;
+    top: 3rem;
+    margin: 0;
     padding: 0;
 }
 
@@ -66,7 +66,7 @@ nav a, nav label{
 /* Small (sm)  portrait tablets and large phones */
 @media (min-width: 640px) {
     .nav-logo, .nav-menu-items {
-        padding: 0 35px;
+        padding: 0 2.188rem;
     }
 }
 
@@ -80,12 +80,12 @@ nav a, nav label{
     .nav-menu-items {
         display: flex;
         justify-content: space-around;
-        padding-left: 20px;
+        padding-left: 1.25rem;
         margin: 0;
     }
 
     .nav-menu-items li {
-        padding: 0 20px;
+        padding: 0 1.25rem;
         border: none;
     }
 }
@@ -94,6 +94,6 @@ nav a, nav label{
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
     .nav-logo, .nav-menu-items {
-        padding: 0 70px;
+        padding: 0 4.375rem;
     }
 }

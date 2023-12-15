@@ -1,7 +1,7 @@
 .nav-menu-items .nav-contact {
     color: var(--cta);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
     text-decoration-style: dashed;
 }
 
@@ -37,10 +37,10 @@ form h2 {
 }
 
 #name, #email, #contact-reason, #message {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: 1px solid var(--secondary);
     background-color: var(--secondary-light);
-    padding-left: 20px;
+    padding-left: 1.25rem;
     font-size: 1rem;
     width: 100%;
 }
@@ -50,7 +50,7 @@ form h2 {
 }
 
 #name, #email, #contact-reason {
-    height: 40px;
+    height: 2.5rem;
 }
 
 #contact-reason, #message {
@@ -58,13 +58,13 @@ form h2 {
 }
 
 #contact-reason {
-    padding-right: 20px;
+    padding-right: 1.25rem;
     color: var(--primary);
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 #message {
-    padding-top: 16px;
+    padding-top: 1rem;
 }
 
 ::placeholder {
@@ -72,11 +72,11 @@ form h2 {
 }
 
 form button {
-    height: 40px;
-    width: 176px;
-    font-size: 16px;
+    height: 2.5rem;
+    width: 11rem;
+    font-size: 1rem;
     background-color: var(--cta);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: none;
     color: var(--primary);
     align-self: flex-start;
@@ -88,10 +88,10 @@ form button:hover, form button:focus {
 }
 
 .map {
-    margin: 20px;
+    margin: 1.25rem;
     width: 80%; 
     max-width: 751px;
-    height: 415px;
+    height: 26rem;
 }
 
 .map iframe {
@@ -106,14 +106,14 @@ form button:hover, form button:focus {
 
 .location h2 {
     color: var(--orange);
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .location {
     display: flex;
     flex-direction: column;
     
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
     max-width: 1024px;
 }
 
@@ -123,6 +123,6 @@ form button:hover, form button:focus {
     }
 
     form {
-        margin: 20px;
+        margin: 1.25rem;
     }
 }

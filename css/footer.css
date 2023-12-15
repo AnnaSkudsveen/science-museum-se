@@ -35,9 +35,9 @@ footer h4 {
 }
 
 .footer-social {
- display: flex;
- justify-content: space-between;
- gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .heading-social {
@@ -60,35 +60,14 @@ footer h4 {
     padding: 6px 0;
 }
 
-/* Small (sm)  portrait tablets and large phones */
-@media (min-width: 640px) {
-
-}
-
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
-footer{
-    flex-direction: row;
-}
+    footer{
+        flex-direction: row;
+    }
 
-.footer-links, .footer-heading {
+    .footer-links, .footer-heading {
     text-align: start;
-}
-
-}
-
-/* Large (lg) laptops/desktops*/
-@media (min-width: 1024px) {
-    /* Your styles for the large breakpoint here */
-}
-
-/* Extra Large (xl) large laptops and desktops*/
-@media (min-width: 1280px) {
-    /* Your styles for the extra large breakpoint here */
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
+    }   
 }

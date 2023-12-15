@@ -11,8 +11,6 @@ main {
     text-decoration-style: dashed;
 }
 
-
-
 .hero-banner {
     height: 270px;
     background-color: #000;
@@ -62,11 +60,6 @@ main {
     color: var(--orange);
 }
 
-/* Small (sm)  portrait tablets and large phones */
-@media (min-width: 640px) {
-
-}
-
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -76,6 +69,10 @@ main {
 
     .vr-textile-container, .printing {
         flex-direction: row-reverse;
+    }
+
+    .history-of-textiles-container, .sustainable-textiles-container, .future-textiles-container, .vr-textile-container, .printing {
+        margin: 0 35px;
     }
 }
 
@@ -91,19 +88,16 @@ main {
         top: 200px;
         margin-left: 4.5rem;
     }
+
+    .history-of-textiles-container, .sustainable-textiles-container, .future-textiles-container, .vr-textile-container, .printing {
+        margin: 0 70px;
+    }
 }
 
 /* Extra Large (xl) large laptops and desktops*/
-
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     .history-of-textiles-container, .printing, .sustainable-textiles-container, .vr-textile-container, .future-textiles-container {
         max-width: 1280px;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

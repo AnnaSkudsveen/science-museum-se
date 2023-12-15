@@ -117,8 +117,6 @@ form button:hover, form button:focus {
     max-width: 1024px;
 }
 
-
-
 @media (min-width: 640px) {
     .form-container {
         flex-direction: row;
@@ -127,10 +125,4 @@ form button:hover, form button:focus {
     form {
         margin: 20px;
     }
-}
-
-/* Medium (md) landscape tablets*/
-@media (min-width: 768px) {
-    /* Your styles for the medium breakpoint here */
-
 }

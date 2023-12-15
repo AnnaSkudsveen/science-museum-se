@@ -10,10 +10,13 @@ h2 {
 }
 
 .nav-menu-items .nav-home {
-    color: var(--cta);
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-style: dashed;
+}
+
+.nav-menu-items .nav-home, .hero-banner h2 {
+    color: var(--cta);
 }
 
 .blue-background {
@@ -40,6 +43,7 @@ h2 {
     position: relative;
     height: 460px;
     background-color: #000;
+    width: 100vw;
 }
 
 .hero-banner h1, .hero-banner h2 {
@@ -48,7 +52,6 @@ h2 {
 }
 
 .hero-banner h2 {
-    color: var(--cta);
     bottom: 130px;
     font-size: 24px;
 }
@@ -66,7 +69,6 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* max-width: 600px; */
 }
 
 .new-exhibit a, .new-event a {
@@ -155,6 +157,7 @@ h2 {
 .image-links {
     position: relative;
     top: 1px;
+    width: 100vw;
 }
 
 .article-link {
@@ -229,7 +232,6 @@ h2 {
     height: 100%;
     object-fit: cover; 
 }
-
 
 .tickets-link, .exhibits-link, .contact-us-link, .events-link, .article-link {
     position: relative;
@@ -341,7 +343,7 @@ h2 {
     }
 
     .article-link-h3 {
-        margin-left: 40px;
+        margin-left: 68px;
         width: 600px;
         top: 475px;
         font-size: 34px;
@@ -416,11 +418,6 @@ h2 {
         margin: auto;
     }
 
-    /* .news {
-        max-width: 1024px;
-        display: flex;
-    } */
-
     .new-exhibit-image .image-tablet, .new-event-image .image-tablet {
         display: none;
     }
@@ -451,11 +448,11 @@ h2 {
     .article-link-h3 {
         width: 410px;
         top: 276px;
+        margin-left: 15px;
     }
 }
 
 /* Extra Large (xl) large laptops and desktops*/
-
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     .home-information {
@@ -466,10 +463,4 @@ h2 {
         margin-left: 43px;
         width: 503px;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

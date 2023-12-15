@@ -58,11 +58,6 @@ h3 {
     gap: 20px;
 }
 
-/* Small (sm)  portrait tablets and large phones */
-@media (min-width: 640px) {
-
-}
-
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -94,7 +89,6 @@ h3 {
 }
 
 /* Extra Large (xl) large laptops and desktops*/
-
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     .home-information {
@@ -104,10 +98,4 @@ h3 {
     .printing-container, .crafts-container, .fashion-show-container {
         max-width: 1280px;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

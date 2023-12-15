@@ -73,9 +73,6 @@ h1 {
     }    
 }
 
-
-
-
 @media (min-width: 360px) {
     .yarn-ball {
         transform: translateX(340px);

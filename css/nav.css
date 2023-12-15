@@ -97,13 +97,3 @@ nav a, nav label{
         padding: 0 70px;
     }
 }
-
-/* Extra Large (xl) large laptops and desktops*/
-@media (min-width: 1280px) {
-    /* Your styles for the extra large breakpoint here */
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-}

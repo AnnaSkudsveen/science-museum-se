@@ -124,7 +124,6 @@ h1 {
 }
 
 /* Extra Large (xl) large laptops and desktops*/
-
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     h1 {

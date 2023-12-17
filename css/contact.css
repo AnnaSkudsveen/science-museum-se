@@ -34,6 +34,8 @@ form {
 
 form h2 {
     color: var(--orange);
+    font-size: 2.5rem;
+    margin: .5rem;
 }
 
 #name, #email, #contact-reason, #message {
@@ -60,7 +62,6 @@ form h2 {
 #contact-reason {
     padding-right: 1.25rem;
     color: var(--primary);
-    margin-bottom: 0.5rem;
 }
 
 #message {
@@ -77,6 +78,7 @@ form button {
     font-size: 1rem;
     background-color: var(--cta);
     border-radius: 0.5rem;
+    margin-top: .5rem;
     border: none;
     color: var(--primary);
     align-self: flex-start;
@@ -97,6 +99,7 @@ form button:hover, form button:focus {
 .map iframe {
     height: 100%;
     width: 100%;
+    border-radius: .5rem;
 }
 
 .location, .location p {
